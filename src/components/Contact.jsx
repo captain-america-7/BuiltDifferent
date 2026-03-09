@@ -77,7 +77,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex space-x-6 mt-4">
-                            <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} href="https://github.com/nallaaruntej" target="_blank" rel="noopener noreferrer" className="p-4 bg-[#000000] rounded-xl border border-[#00f5d4]/20 hover:border-[#00f5d4] text-[#4da6ff] hover:text-[#00f5d4] transition-colors glow-blue hover:glow-cyan">
+                            <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} href="https://github.com/captain-america-7" target="_blank" rel="noopener noreferrer" className="p-4 bg-[#000000] rounded-xl border border-[#00f5d4]/20 hover:border-[#00f5d4] text-[#4da6ff] hover:text-[#00f5d4] transition-colors glow-blue hover:glow-cyan">
                                 <Github size={28} />
                             </motion.a>
                             <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} href="https://linkedin.com/in/nallaaruntej" target="_blank" rel="noopener noreferrer" className="p-4 bg-[#000000] rounded-xl border border-[#00f5d4]/20 hover:border-[#00f5d4] text-[#4da6ff] hover:text-[#00f5d4] transition-colors glow-blue hover:glow-cyan">
