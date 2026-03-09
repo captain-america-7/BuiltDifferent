@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0a0a0c",
+                        "slate-custom": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .star-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at center, rgba(13, 89, 242, 0.15) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<div class="relative min-h-screen w-full flex flex-col overflow-x-hidden star-bg">
+<!-- Navigation Bar -->
+<nav class="sticky top-0 z-50 w-full border-b border-slate-200/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">stat_3</span>
+</div>
+<span class="text-xl font-bold tracking-tighter">A</span>
+</div>
+<!-- Menu Items -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-slate-500 dark:text-slate-400" href="#">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-slate-500 dark:text-slate-400" href="#">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-slate-500 dark:text-slate-400" href="#">Contact</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+<button class="hidden sm:flex items-center gap-2 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 px-4 py-2 rounded-lg text-sm font-bold transition-all">
+                        Resume
+                        <span class="material-symbols-outlined text-sm">download</span>
+</button>
+<button class="md:hidden flex items-center justify-center p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-1 flex flex-col">
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 px-6 flex flex-col items-center text-center">
+<div class="hero-glow absolute inset-0 -z-10"></div>
+<!-- 3D Abstract Element Placeholder -->
+<div class="w-64 h-64 mb-12 relative flex items-center justify-center">
+<div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+<div class="w-full h-full rounded-2xl bg-gradient-to-br from-purple-600 via-blue-500 to-indigo-800 shadow-2xl shadow-primary/40 rotate-12 flex items-center justify-center border border-white/10" data-alt="Abstract 3D purple and blue gradient geometry shape">
+<span class="material-symbols-outlined text-7xl text-white/50">deployed_code</span>
+</div>
+</div>
+<!-- Title and Bio -->
+<div class="max-w-4xl mx-auto flex flex-col gap-6">
+<h1 class="text-6xl md:text-8xl font-black tracking-tight gradient-text">
+                        Aadityaa Nagarajan
+                    </h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
+                        Full-Stack Developer <span class="text-primary/50">|</span> 
+                        React Native Developer <span class="text-primary/50">|</span> 
+                        Co-founder of Oxlac <span class="text-primary/50">|</span> 
+                        Engineering Undergrad
+                    </p>
+</div>
+<!-- CTA Buttons -->
+<div class="mt-12 flex flex-wrap justify-center gap-4">
+<button class="flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform">
+                        Explore My Work
+                        <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+<button class="flex items-center gap-2 px-8 py-4 bg-white text-background-dark rounded-xl font-bold text-lg hover:bg-slate-100 transition-colors shadow-xl">
+                        Let's Connect 👋
+                    </button>
+</div>
+</section>
+<!-- Feature Section / About Peek -->
+<section class="max-w-7xl mx-auto w-full px-6 py-20">
+<div class="grid md:grid-cols-3 gap-6">
+<div class="p-8 rounded-2xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<h3 class="text-xl font-bold">Full-Stack Excellence</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            Crafting scalable architectures and seamless user experiences from database to interface.
+                        </p>
+</div>
+<div class="p-8 rounded-2xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<h3 class="text-xl font-bold">Mobile First</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            Specializing in React Native to build high-performance, native-feel applications for iOS and Android.
+                        </p>
+</div>
+<div class="p-8 rounded-2xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="text-xl font-bold">Entrepreneurship</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            Co-founder at Oxlac, driving innovation and leading development teams to deliver impact.
+                        </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-slate-200/10 py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<div class="bg-primary/20 p-1 rounded">
+<span class="material-symbols-outlined text-primary text-sm">stat_3</span>
+</div>
+<span class="font-bold">Aadityaa Nagarajan</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Building the future with code.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span> LinkedIn</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">terminal</span> GitHub</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span> Twitter</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

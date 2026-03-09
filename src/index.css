@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-[#f0f4f8] font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-[#f0f4f8];
+  }
+}
+
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 15px rgba(77, 166, 255, 0.4);
+  }
+
+  .bg-radial-glow {
+    background: radial-gradient(circle at center, rgba(0, 245, 212, 0.15) 0%, transparent 60%);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background grid pattern */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 245, 212, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 245, 212, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.glass-card {
+  background: rgba(0, 245, 212, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 245, 212, 0.12);
+  border-radius: 20px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 245, 212, 0.35);
+  background: rgba(0, 245, 212, 0.08);
+}
