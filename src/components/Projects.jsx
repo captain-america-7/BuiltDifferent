@@ -12,7 +12,7 @@ const Projects = () => {
             date: "Dec 2024 – May 2025",
             description: "Cloud-based security system with encryption, IAM policies, least-privilege access, and compliance-aligned data protection. Evaluated against common attack vectors.",
             tags: ["AWS", "IAM", "Encryption", "Cloud Security", "Compliance"],
-            github: "https://github.com/nallaaruntej",
+            github: "https://github.com/captain-america-7",
             icon: ShieldCheck
         },
         {
@@ -20,7 +20,7 @@ const Projects = () => {
             date: "Jul 2024 – Nov 2024",
             description: "End-to-end smart home system on AWS cloud infrastructure with reliable IoT device-to-cloud communication.",
             tags: ["AWS", "IoT", "Cloud Deployment", "Automation"],
-            github: "https://github.com/nallaaruntej",
+            github: "https://github.com/captain-america-7",
             icon: Cpu
         },
         {
@@ -28,7 +28,7 @@ const Projects = () => {
             date: "Feb 2023 – Apr 2023",
             description: "NIDS using RNN/TensorFlow with 30% accuracy improvement and 18% false positive reduction. Processed 100K+ network traffic records.",
             tags: ["Python", "TensorFlow", "RNN", "Pandas", "NumPy", "Network Security", "ML"],
-            github: "https://github.com/nallaaruntej",
+            github: "https://github.com/captain-america-7",
             icon: Database
         }
     ];
@@ -36,7 +36,7 @@ const Projects = () => {
     return (
         <section id="projects" className="py-20 bg-[#000000] relative border-t border-[#00f5d4]/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div 
+                <motion.div
                     initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} variants={fadeUp}
                     className="text-center mb-16"
                 >
@@ -46,7 +46,7 @@ const Projects = () => {
                     <div className="h-1 w-20 bg-gradient-to-r from-[#00f5d4] to-[#4da6ff] mx-auto rounded"></div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} variants={staggerContainer}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
@@ -65,14 +65,14 @@ const Projects = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    
+
                                     <h3 className="text-xl font-heading font-bold text-white mb-2 group-hover:text-[#00f5d4] transition-colors">{project.title}</h3>
                                     <div className="text-sm font-code text-[#4da6ff] mb-4">{project.date}</div>
-                                    
+
                                     <p className="text-gray-400 font-body text-sm leading-relaxed mb-6 flex-1">
                                         {project.description}
                                     </p>
-                                    
+
                                     <div className="flex flex-wrap gap-2 mt-auto">
                                         {project.tags.map((tag, tIndex) => (
                                             <span key={tIndex} className="px-3 py-1 bg-[#000000] border border-[#00f5d4]/20 text-[#00f5d4] font-code text-xs rounded transition-colors group-hover:border-[#00f5d4]/50">
